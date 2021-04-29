@@ -10,7 +10,7 @@ class PostImagesController < ApplicationController
     @post_image.save
     redirect_to post_images_path
 
-    #8,9行目は　@post_image=current_user.post_image.new(post_image_params)　に小さくできる。
+    #8,9行目は　@post_image=current_user.post_images.new(post_image_params)　に小さくできる。
 
   end
 
